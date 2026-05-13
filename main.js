@@ -5,8 +5,10 @@ let con = mysql.createConnection({
   user: "sql8826326",
   password: "xWeTCJRnyl"
 });
+function run_login() {
 
-con.connect(function(err) {
-  if (err) throw err;
-  console.log("Connected!");
-});
+}
+
+function run_register() {
+  
+}
