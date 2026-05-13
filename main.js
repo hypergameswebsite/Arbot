@@ -5,3 +5,9 @@ let con = mysql.createConnection({
   user: "USER",
   password: "PASSWORD"
 });
+
+function run_login() {
+}
+
+function run_register() {
+}
