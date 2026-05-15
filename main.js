@@ -3,7 +3,8 @@ let mysql = require('mysql');
 let con = mysql.createConnection({
   host: "sql8.freesqldatabase.com",
   user: "USER",
-  password: "PASSWORD"
+  password: "PASSWORD",
+  trustServerCertificate: "true"
 });
 
 function run_login() {
@@ -19,6 +20,8 @@ function run_login() {
       if (err) throw err;
       if (result.length > 0) {
         alert("Login successful!");
+        window.location.href = "loggedin.html";
+        
       } else {
         alert("Invalid username or password.");
       }
